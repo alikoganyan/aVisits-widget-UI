@@ -1489,8 +1489,52 @@ label {
 			}
 		}
 
+		/* Ready Master Content */
 		.content-right-block.ready-master-right-block {
-			.time-master-time-schedule {
+			.ready-master-title-text {
+				font-family: OpenSans-Bold, sans-serif;
+				border-bottom: 1px solid $color-light-gray;
+				padding: 20px;
+			}
+
+			.time-master-book-schedule-container {
+				display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    flex-wrap: wrap;
+			    justify-content: space-between;
+				.ready-master-time-schedule-item {
+					float: left;
+					//width: 33%;
+
+					&.middle {
+						width: 42%;
+						color: $color-mid-gray;
+
+						.ready-master-time-schedule-sub-item {
+							border-bottom: 1px solid $color-light-gray;
+						}
+						.ready-master-time-schedule-item-title {
+							color: #404148;
+						}
+					}
+
+
+					.ready-master-time-schedule-item-time {
+						font-size: 26px;
+						font-family: Opensans-Bold, sans-serif;
+						
+
+					}
+
+					.ready-master-time-schedule-item-date {
+
+					}
+				}
+			}
+/* 			.time-master-time-schedule {
 				float: left;
 
 				.ready-master-time-schedule-block {
@@ -1499,8 +1543,7 @@ label {
 					}
 				}
 			}
-
-		}
+ */		}
 
 		h3 {
 			text-align: center;

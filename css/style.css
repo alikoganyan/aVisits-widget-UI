@@ -380,7 +380,8 @@ label {
     /* Contacts Master Content */
     /* Master Master Content */
     /* Services Service Content */
-    /* Time Master Content */ }
+    /* Time Master Content */
+    /* Ready Master Content */ }
     .page-wrapper .page-container .choose-city-wrapper {
       width: 292px;
       margin: auto;
@@ -944,10 +945,41 @@ label {
               padding-left: 30px; }
               .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-info div img {
                 vertical-align: baseline; }
-    .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-time-schedule {
-      float: left; }
-      .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-time-schedule .ready-master-time-schedule-block .ready-master-time-schedule-item {
-        float: left; }
+    .page-wrapper .page-container .content-right-block.ready-master-right-block {
+      /* 			.time-master-time-schedule {
+				float: left;
+
+				.ready-master-time-schedule-block {
+					.ready-master-time-schedule-item {
+						float: left;
+					}
+				}
+			}
+ */ }
+      .page-wrapper .page-container .content-right-block.ready-master-right-block .ready-master-title-text {
+        font-family: OpenSans-Bold, sans-serif;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 20px; }
+      .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item {
+          float: left; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle {
+            width: 42%;
+            color: #acacaf; }
+            .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle .ready-master-time-schedule-sub-item {
+              border-bottom: 1px solid #dfdfdf; }
+            .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle .ready-master-time-schedule-item-title {
+              color: #404148; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item .ready-master-time-schedule-item-time {
+            font-size: 26px;
+            font-family: Opensans-Bold, sans-serif; }
     .page-wrapper .page-container h3 {
       text-align: center;
       font-weight: 600;
