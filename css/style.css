@@ -12,7 +12,8 @@ a {
   transition: 1s ease; }
 
 a:focus, a:active, a:hover {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  outline: none !important; }
 
 input:focus, textarea:focus, button:focus {
   border: 1px solid #e38044;
@@ -1096,8 +1097,6 @@ label {
   .choose-options-content {
     min-height: 402px;
     height: initial; }
-  .page-wrapper .page-container .contacts-master-content .contacts-master-right-block {
-    max-width: 51%; }
   .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-right-block-second {
     width: 260px;
     margin-left: 0; }
@@ -1142,7 +1141,9 @@ label {
   .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container {
     display: none; }
     .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive {
-      display: block; } }
+      display: block; }
+  .page-wrapper .page-container .contacts-master-content .contacts-master-right-block {
+    max-width: unset; } }
 
 @media (max-width: 713px) {
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-title-block {
@@ -1362,11 +1363,11 @@ label {
   -webkit-tap-highlight-color: transparent; }
 
 .avisits-date_slider {
-  width: 91%;
+  padding: 0 20px;
   margin: 0 auto; }
 
 .slick-prev {
-  left: -3px;
+  left: 5px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1374,17 +1375,20 @@ label {
   transform: rotate(180deg); }
 
 .slick-next {
-  right: 0; }
+  right: 5px; }
 
 .slick-prev, .slick-next {
-  background: url(../assets/images/svg/arrow.svg);
+  background: url(../assets/images/svg/arrow-gray.svg);
+  background-repeat: no-repeat;
   border: none;
   width: 7px;
-  height: 11px;
+  height: 7px;
   position: absolute;
-  top: 12px;
+  top: 45%;
   padding: 0;
   z-index: 1; }
+  .slick-prev:focus, .slick-next:focus {
+    border: none; }
 
 .slick-slider .slick-track, .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1404,7 +1408,10 @@ label {
   position: relative;
   top: 0;
   left: 0;
-  display: block; }
+  display: block;
+  height: 53px;
+  max-height: 53px;
+  overflow: hidden; }
 
 .slick-track:before, .slick-track:after {
   display: table;
@@ -1418,18 +1425,81 @@ label {
   display: none;
   float: left;
   height: 100%;
-  min-height: 1px; }
+  min-height: 1px;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf; }
 
 .avisits-date_slider .avisits-col {
   position: relative;
-  height: 60px;
+  height: 100%;
   text-align: center; }
+  .avisits-date_slider .avisits-col:hover a {
+    background-color: #fff9f5; }
+    .avisits-date_slider .avisits-col:hover a p {
+      transition: .5s ease;
+      color: #e38044; }
+      .avisits-date_slider .avisits-col:hover a p:last-child {
+        color: #8e8e92; }
+  .avisits-date_slider .avisits-col.avisits-active a {
+    background-color: #e38044; }
+    .avisits-date_slider .avisits-col.avisits-active a p {
+      color: #fff; }
+      .avisits-date_slider .avisits-col.avisits-active a p:last-child {
+        color: #fff; }
+  .avisits-date_slider .avisits-col.disabled a {
+    background-color: #ebebeb; }
+  .avisits-date_slider .avisits-col.disabled:hover a p {
+    transition: .5s ease;
+    color: unset; }
+    .avisits-date_slider .avisits-col.disabled:hover a p:last-child {
+      color: unset; }
 
 .avisits-date_slider .avisits-col a {
   text-decoration: none;
   display: block;
-  line-height: 1.9; }
+  line-height: 1.9;
+  height: 100%;
+  padding: 4px; }
   .avisits-date_slider .avisits-col a p {
+    transition: .5s ease;
     color: #333333; }
     .avisits-date_slider .avisits-col a p:last-child {
       color: #8e8e92; }
+
+.call-modal-container {
+  text-align: center; }
+  .call-modal-container h3 {
+    padding-top: 106px; }
+  .call-modal-container .phone-registration-middle-block {
+    margin: 80px 0 70px 0; }
+  .call-modal-container .phone-registration-offer {
+    font-size: 14px;
+    color: #5c5c5f; }
+  .call-modal-container .registration-phone {
+    font-size: 50px;
+    font-family: OpenSans-Bold; }
+  .call-modal-container .phone-registration-btn-container {
+    width: 364px;
+    margin: auto; }
+    .call-modal-container .phone-registration-btn-container button {
+      display: inline-flex;
+      border: none;
+      background: none;
+      transition: 1s ease;
+      padding: 0; }
+      .call-modal-container .phone-registration-btn-container button:hover {
+        opacity: 0.8; }
+      .call-modal-container .phone-registration-btn-container button div {
+        width: 170px;
+        height: 44px;
+        line-height: 43px;
+        text-align: center;
+        border-radius: 5px; }
+      .call-modal-container .phone-registration-btn-container button .disconnect {
+        border: 1px solid #dfdfdf; }
+      .call-modal-container .phone-registration-btn-container button .continue {
+        background-color: #e38044;
+        color: #fff; }
+        .call-modal-container .phone-registration-btn-container button .continue img {
+          height: 7px;
+          margin-left: 7px; }
