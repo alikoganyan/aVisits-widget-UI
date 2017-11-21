@@ -55,6 +55,9 @@ label {
 .bordered {
   box-shadow: 0px -1px 15px -4px rgba(0, 0, 0, 0.2), -5px 2px 47px -6px rgba(0, 0, 0, 0.19); }
 
+.ruble-icon {
+  vertical-align: baseline; }
+
 .services-count-result-time-master {
   line-height: 1.9; }
   .services-count-result-time-master img {
@@ -123,6 +126,8 @@ label {
   vertical-align: middle;
   border-radius: 3px;
   text-align: center; }
+  .nav-bottom.ready-master .next.nav-bottom-next {
+    width: 137px; }
   .nav-bottom span.services-count-result {
     display: inline-block;
     margin-top: -8px;
@@ -130,10 +135,13 @@ label {
     vertical-align: top; }
   .nav-bottom span img {
     vertical-align: baseline; }
-  .nav-bottom a {
-    display: inline-flex; }
-    .nav-bottom a:hover {
-      opacity: 0.8; }
+  .nav-bottom button {
+    display: inline-flex;
+    border: none;
+    background: none;
+    transition: 1s ease; }
+    .nav-bottom button:hover {
+      opacity: 0.9; }
   .nav-bottom .nav-bottom-item {
     width: 80px;
     height: 35px;
@@ -204,19 +212,19 @@ label {
       white-space: nowrap; }
   .choose-options.choose-options-top-responsive.ready-master {
     height: 55px;
-    line-height: 55px;
-    text-align: center; }
+    line-height: 55px; }
     .choose-options.choose-options-top-responsive.ready-master .choose-options-top-container {
       height: 75px;
       line-height: inherit;
       padding: 0; }
     .choose-options.choose-options-top-responsive.ready-master .choose-options-logo {
-      padding: 0; }
+      text-align: left; }
       .choose-options.choose-options-top-responsive.ready-master .choose-options-logo img {
-        margin-top: 14px; }
+        display: inline;
+        margin-top: -45px; }
     .choose-options.choose-options-top-responsive.ready-master .ready-master-top-text {
-      margin-left: -34%;
       font-size: 14px;
+      padding-left: 12px;
       font-family: OpenSans-Bold, sans-serif; }
 
 .choose-options.choose-options-top .choose-options-logo {
@@ -270,14 +278,20 @@ label {
 
 .choose-options.choose-options-top.ready-master {
   height: 55px;
-  line-height: 55px;
-  text-align: center; }
-  .choose-options.choose-options-top.ready-master .choose-options-logo img {
-    margin-top: 14px; }
+  line-height: 55px; }
+  .choose-options.choose-options-top.ready-master .choose-options-logo {
+    width: 174px;
+    border-right: 1px solid #dfdfdf;
+    text-align: left;
+    padding-left: 10px; }
+    .choose-options.choose-options-top.ready-master .choose-options-logo img {
+      display: inline-block;
+      margin-top: -2px; }
   .choose-options.choose-options-top.ready-master .choose-options-container {
-    vertical-align: top; }
+    vertical-align: middle;
+    width: unset; }
   .choose-options.choose-options-top.ready-master .ready-master-top-text {
-    margin-left: -34%;
+    padding-left: 12px;
     font-size: 20px;
     font-family: OpenSans-Bold, sans-serif; }
 
@@ -329,6 +343,16 @@ label {
     width: 28px; }
   .contacts-master-email-spam.responsive div:last-child {
     width: calc(100% - 70px); }
+
+.content-left-block-item {
+  min-height: 53px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #dfdfdf; }
+  .content-left-block-item .content-left-block-item-title {
+    font-family: Opensans-Bold;
+    line-height: 1.9; }
+  .content-left-block-item p:not(.content-left-block-item-title) {
+    color: #8e8e92; }
 
 /* Choose Master Content */
 .choose-options-content.services-service-content.services-service-master-chosen,
@@ -869,9 +893,9 @@ label {
         vertical-align: top;
         padding-bottom: 14px; }
         .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-title-block .master-title-block-pic-container {
-          height: 38px;
-          width: 38px;
-          line-height: 36px;
+          height: 40px;
+          width: 40px;
+          line-height: 38px;
           vertical-align: top;
           border-radius: 50px;
           display: inline-block;
@@ -945,21 +969,51 @@ label {
               padding-left: 30px; }
               .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-info div img {
                 vertical-align: baseline; }
+    .page-wrapper .page-container .content-left-block.ready-master-left-block {
+      position: relative; }
+      .page-wrapper .page-container .content-left-block.ready-master-left-block .services-count-result-ready-master-left {
+        position: absolute;
+        bottom: 43px;
+        padding: 5px 10px;
+        line-height: 1.9;
+        color: #8e8e92; }
+        .page-wrapper .page-container .content-left-block.ready-master-left-block .services-count-result-ready-master-left img {
+          vertical-align: baseline; }
+    .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block {
+      width: calc(100% - 174px);
+      overflow-y: unset;
+      max-height: unset;
+      height: 402px; }
+      .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .ready-master-content-left-block-items {
+        display: none;
+        margin-bottom: 28px;
+        width: 100%; }
+        .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .ready-master-content-left-block-items .content-left-block-item {
+          display: table-cell;
+          border: 1px solid #dfdfdf;
+          background-color: #f5f5f5; }
+          .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .ready-master-content-left-block-items .content-left-block-item:last-child {
+            border-left: none; }
+      .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .time-master-book-schedule-container-all {
+        overflow-y: scroll;
+        max-height: 356px;
+        border-bottom: none; }
+        .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .time-master-book-schedule-container-all::-webkit-scrollbar {
+          width: 0px;
+          background-color: #F5F5F5; }
+        .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .time-master-book-schedule-container-all::-webkit-scrollbar-thumb {
+          border-radius: 5px;
+          height: 40px;
+          background-color: #e4e7e8; }
     .page-wrapper .page-container .content-right-block.ready-master-right-block {
-      /* 			.time-master-time-schedule {
-				float: left;
-
-				.ready-master-time-schedule-block {
-					.ready-master-time-schedule-item {
-						float: left;
-					}
-				}
-			}
- */ }
+      position: relative; }
+      .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container-all-inner {
+        padding: 11px 20px; }
       .page-wrapper .page-container .content-right-block.ready-master-right-block .ready-master-title-text {
         font-family: OpenSans-Bold, sans-serif;
         border-bottom: 1px solid #dfdfdf;
-        padding: 20px; }
+        padding: 16px;
+        line-height: 1.7; }
       .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container {
         display: -webkit-box;
         display: -moz-box;
@@ -967,19 +1021,72 @@ label {
         display: -webkit-flex;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-bottom: 22px; }
+        .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive {
+          display: none; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.time-info {
+            float: right; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle {
+            width: 100%; }
+            .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle .time-master-service-list {
+              padding-left: 0; }
+              .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle .time-master-service-list table tr {
+                vertical-align: top; }
+                .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle .time-master-service-list table tr td:first-child {
+                  width: 66%;
+                  padding-right: 12px; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.time-master-title-block {
+            width: unset;
+            float: left;
+            padding-bottom: 20px; }
         .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item {
           float: left; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.time-master-title-block {
+            width: 38%; }
           .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle {
-            width: 42%;
+            width: 40%;
             color: #acacaf; }
             .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle .ready-master-time-schedule-sub-item {
-              border-bottom: 1px solid #dfdfdf; }
+              border-bottom: 1px solid #dfdfdf;
+              line-height: 1.7;
+              padding-top: 4px;
+              padding-bottom: 5px; }
+              .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle .ready-master-time-schedule-sub-item span:first-child {
+                padding-right: 35px; }
             .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item.middle .ready-master-time-schedule-item-title {
               color: #404148; }
           .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item .ready-master-time-schedule-item-time {
             font-size: 26px;
-            font-family: Opensans-Bold, sans-serif; }
+            font-family: Opensans-Bold, sans-serif;
+            line-height: 0.9;
+            padding-bottom: 4px; }
+          .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container .ready-master-time-schedule-item .ready-master-time-schedule-item-date {
+            color: #8e8e92; }
+      .page-wrapper .page-container .content-right-block.ready-master-right-block .services-count-result-ready-master {
+        padding-left: 14%;
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #dfdfdf;
+        display: block !important;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+        font-size: 14px; }
+      .page-wrapper .page-container .content-right-block.ready-master-right-block .services-count-result-ready-master-responsive {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        border-top: 1px solid #dfdfdf;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100; }
     .page-wrapper .page-container h3 {
       text-align: center;
       font-weight: 600;
@@ -1031,7 +1138,11 @@ label {
     width: 100%;
     margin-top: 16px; }
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-time-schedule {
-    width: calc(100% - 199px); } }
+    width: calc(100% - 199px); }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container {
+    display: none; }
+    .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive {
+      display: block; } }
 
 @media (max-width: 713px) {
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-title-block {
@@ -1092,9 +1203,6 @@ label {
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-title-block,
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-time-schedule {
     float: none; }
-  /* 	.page-wrapper .page-container .content-right-block.time-master-right-block .time-master-time-schedule {
-		margin-top: 22px;
-	} */
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-title,
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-info {
     float: none;
@@ -1108,7 +1216,21 @@ label {
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all {
     margin-bottom: 14px; }
   .choose-options.choose-options-top-responsive.ready-master .ready-master-top-text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block {
+    width: 100%; }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .services-count-result-ready-master {
+    display: none !important; }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .services-count-result-ready-master-responsive {
+    display: block; }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container-all-inner {
+    padding: 11px 16px; }
+  .page-wrapper .page-container .content-right-block.time-master-right-block.ready-master-right-block .ready-master-content-left-block-items {
+    display: table; }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .ready-master-title-text {
+    border-bottom: none; }
+    .page-wrapper .page-container .content-right-block.ready-master-right-block .ready-master-title-text br {
+      content: ''; } }
 
 @media (max-width: 490px) {
   .page-wrapper {
@@ -1165,7 +1287,16 @@ label {
 
 @media (max-width: 350px) {
   .page-wrapper .page-container h3 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .choose-options.choose-options-top-responsive.ready-master .choose-options-logo {
+    text-align: left;
+    padding-right: 0; } }
+
+@media (max-width: 340px) {
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.time-info {
+    float: left;
+    width: 100%;
+    padding-bottom: 12px; } }
 
 .services-service-left-block-pic-container {
   height: 48px;
@@ -1214,3 +1345,91 @@ label {
 .avisits-map .avisits-point:hover,
 .avisits-map .avisits-point.avisits-active {
   background-position: bottom; }
+
+/* Calendar */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.avisits-date_slider {
+  width: 91%;
+  margin: 0 auto; }
+
+.slick-prev {
+  left: -3px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.slick-next {
+  right: 0; }
+
+.slick-prev, .slick-next {
+  background: url(../assets/images/svg/arrow.svg);
+  border: none;
+  width: 7px;
+  height: 11px;
+  position: absolute;
+  top: 12px;
+  padding: 0;
+  z-index: 1; }
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block; }
+
+.slick-track:before, .slick-track:after {
+  display: table;
+  content: ''; }
+
+.slick-initialized .slick-slide {
+  display: block;
+  width: 110px !important; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+
+.avisits-date_slider .avisits-col {
+  position: relative;
+  height: 60px;
+  text-align: center; }
+
+.avisits-date_slider .avisits-col a {
+  text-decoration: none;
+  display: block;
+  line-height: 1.9; }
+  .avisits-date_slider .avisits-col a p {
+    color: #333333; }
+    .avisits-date_slider .avisits-col a p:last-child {
+      color: #8e8e92; }
