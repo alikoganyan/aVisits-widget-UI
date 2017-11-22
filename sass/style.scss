@@ -9,6 +9,12 @@ $color-peach: #fff9f5;
 
 $shadow: 0px -1px 15px -4px rgba(0, 0, 0, 0.2), -5px 2px 47px -6px rgba(0, 0, 0, 0.19);
 
+* {
+	-webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+    -moz-box-sizing: border-box; /* Firefox ≤ 28 */
+    box-sizing: border-box; /* Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1 */
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -24,6 +30,7 @@ p {
 
 a {
 	transition: 1s ease;
+	-webkit-transition: 1s ease;
 }
 
 a:focus, a:active, a:hover {
@@ -35,6 +42,7 @@ input:focus, textarea:focus, button:focus {
 	border: 1px solid $color-orange;
 	outline: none;
 	transition: 1s ease;
+	-webkit-transition: 1s ease;
 }
 
 label {
@@ -86,6 +94,7 @@ label {
 
 .bordered {
 	box-shadow: 0px -1px 15px -4px rgba(0, 0, 0, 0.2), -5px 2px 47px -6px rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0px -1px 15px -4px rgba(0, 0, 0, 0.2), -5px 2px 47px -6px rgba(0, 0, 0, 0.19);
 }
 
 .ruble-icon {
@@ -102,6 +111,7 @@ label {
 /* Item */
 .item {
 	transition: 1s background ease;
+	-webkit-transition: 1s background ease;
 	border-top: 1px solid $color-light-gray;
 
 	&:last-child {
@@ -207,6 +217,7 @@ label {
 		border: none;
 		background: none;
 		transition: 1s ease;
+		-webkit-transition: 1s ease;
 
 		&:hover {
 			opacity: 0.9;
@@ -450,13 +461,6 @@ label {
 		max-height: 402px;
 		overflow-y: scroll;
 
-		&::-webkit-scrollbar-track {
-			// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-			// height: 40px;
-			// border-radius: 10px;
-			// background-color: #F5F5F5;
-		}
-
 		&::-webkit-scrollbar {
 			width: 0px;
 			background-color: #F5F5F5;
@@ -596,6 +600,7 @@ label {
 			height: 11px;
 			float: right;
 			transition: 1s ease;
+			-webkit-transition: 1s ease;
 
 			&:hover {
 				opacity: 0.6;
@@ -632,13 +637,6 @@ label {
 			    	width: 282px;
 			    	direction: ltr;
 			    }
-
-		    	&::-webkit-scrollbar-track {
-					// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-					// height: 40px;
-					// border-radius: 10px;
-					// background-color: #F5F5F5;
-				}
 
 				&::-webkit-scrollbar {
 					width: 10px;
@@ -685,6 +683,7 @@ label {
 						border-radius: 3px;
 						border: 1px solid $color-light-gray;
 						transition: 1s ease;
+						-webkit-transition: 1s ease;
 						cursor: pointer;
 						text-align: center;
 
@@ -746,8 +745,8 @@ label {
 						right: 0;
 						bottom: 0;
 						background-color: #fff;
-						-webkit-transition: .4s;
 						transition: .4s;
+						-webkit-transition: .4s;
 					}
 
 					.slider:before {
@@ -758,8 +757,8 @@ label {
 						left: 0;
 						top: 2px;
 						background-color: $color-orange;
-						-webkit-transition: .4s;
 						transition: .4s;
+						-webkit-transition: .4s;
 					}
 
 					input:checked + .slider {
@@ -768,6 +767,7 @@ label {
 
 					input:focus + .slider {
 						box-shadow: 0 0 1px #fff;
+						-webkit-box-shadow: 0 0 1px #fff;
 					}
 
 					input:checked + .slider:before {
@@ -850,6 +850,7 @@ label {
 						background-image: url(../assets/images/salon.png);
 						background-repeat: no-repeat;
 						background-size: cover;
+						-webkit-background-size: cover;
 						vertical-align: middle;
 
 						img {
@@ -1045,6 +1046,7 @@ label {
 					padding-bottom: 5px;
 					float: left;
 					transition: 1s ease;
+					-webkit-transition: 1s ease;
 					border-left: 1px solid $color-light-gray;
     				border-bottom: 1px solid $color-light-gray;
 
@@ -1094,6 +1096,7 @@ label {
 						    background-image: url(../assets/images/master-pic.png);
 						    background-repeat: no-repeat;
 							background-size: cover;
+							-webkit-background-size: cover;
 
 						    img {
 								height: 80px;
@@ -1151,7 +1154,9 @@ label {
 		    		padding: 10px;
 		    		margin-bottom: 10px;
 		    		box-shadow: $shadow;
+		    		-webkit-box-shadow: $shadow;
 		    		transition: 1s ease;
+		    		-webkit-transition: 1s ease;
 		    		cursor: pointer;
 
 		    		&.active, &:hover {
@@ -1182,6 +1187,7 @@ label {
 						    //background-color: #5c24fa;
 						    background: url(../assets/images/master-pic.png);
 							background-size: cover;
+							-webkit-background-size: cover;
 
 						    img {
 								height: 38px;
@@ -1415,6 +1421,7 @@ label {
 				    background-image: url(../assets/images/master-pic.png);
 				    background-repeat: no-repeat;
 				    background-size: cover;
+				    -webkit-background-size: cover;
 				}
 				.master-title-block-text {
 					display: inline-block;
@@ -2124,6 +2131,7 @@ label {
 	background-image: url(../assets/images/master-pic.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
 	display: inline-block;
 }
 
@@ -2134,6 +2142,7 @@ label {
 
 	.avisits-point {
 		transition: none !important;
+		-webkit-transition: none !important;
 	}
 
 	.avisits-point1 {
@@ -2303,6 +2312,7 @@ label {
 
 		    p {
 		    	transition: .5s ease;
+		    	-webkit-transition: .5s ease;
 		    	color: $color-orange;
 
 		    	&:last-child {
@@ -2335,6 +2345,7 @@ label {
 	    	a {
 			    p {
 			    	transition: .5s ease;
+			    	-webkit-transition: .5s ease;
 			    	color: unset;
 
 			    	&:last-child {
@@ -2355,6 +2366,7 @@ label {
 
     p {
     	transition: .5s ease;
+    	-webkit-transition: .5s ease;
     	color: $color-default;
 
     	&:last-child {
@@ -2405,6 +2417,7 @@ label {
 		    border: none;
 		    background: none;
 		    transition: 1s ease;
+		    -webkit-transition: 1s ease;
 		    padding: 0;
 
 		    &:first-child {
