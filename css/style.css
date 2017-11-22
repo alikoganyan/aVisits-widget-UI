@@ -232,7 +232,8 @@ label {
     .choose-options.choose-options-top-responsive.ready-master .choose-options-top-container {
       height: 75px;
       line-height: inherit;
-      padding: 0; }
+      padding: 0;
+      overflow: hidden; }
     .choose-options.choose-options-top-responsive.ready-master .choose-options-logo {
       text-align: left; }
       .choose-options.choose-options-top-responsive.ready-master .choose-options-logo img {
@@ -1300,7 +1301,21 @@ label {
   .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-email-spam {
     padding-top: 20px; }
   .page-wrapper .page-container .content-right-block.time-master-right-block {
-    max-height: 390px; } }
+    max-height: 390px; }
+  .call-modal-container h3 {
+    padding-top: 56px !important;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .call-modal-container .phone-registration-middle-block {
+    margin: 74px 20px 70px 20px !important; }
+  .call-modal-container .registration-phone {
+    font-size: 30px !important;
+    margin-top: 10px !important; }
+  .call-modal-container .phone-registration-btn-container {
+    width: 304px !important; }
+  .call-modal-container .phone-registration-btn-container button {
+    width: 46% !important; } }
 
 @media (max-width: 490px) {
   .page-wrapper {
@@ -1338,7 +1353,13 @@ label {
 @media (max-width: 400px) {
   .page-wrapper .page-container .master-master-content .masters-list .masters-list-item {
     flex: auto;
-    width: 50%; } }
+    width: 50%; }
+  .call-modal-container .phone-registration-btn-container button {
+    width: 100% !important;
+    margin-bottom: 10px; }
+  .call-modal-container .phone-registration-btn-container {
+    width: 100% !important;
+    padding: 0 20px; } }
 
 @media (max-width: 360px) {
   .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-right-block-first, .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-right-block-second {
@@ -1351,7 +1372,9 @@ label {
     font-size: 18px; }
   .choose-options.choose-options-top-responsive.ready-master .choose-options-logo {
     text-align: left;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .call-modal-container .registration-phone {
+    font-size: 29px !important; } }
 
 @media (max-width: 340px) {
   .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.time-info {
@@ -1431,24 +1454,26 @@ label {
 
 .slick-prev {
   left: 0;
-  border-right: 1px solid #dfdfdf;
+  border-right: 0;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
+  .slick-prev:focus {
+    border: 0;
+    border-right: 0 !important; }
 
 .slick-next {
   right: 0;
-  border-right: 1px solid #dfdfdf; }
+  border: 1px solid #dfdfdf; }
 
 .slick-prev, .slick-next {
   background: url(../assets/images/svg/arrow-gray.svg);
   background-size: 32%;
   background-position: 50%;
   background-repeat: no-repeat;
-  border-top: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
+  border: 1px solid #dfdfdf;
   width: 20px;
   height: 100%;
   position: absolute;
@@ -1494,6 +1519,7 @@ label {
   float: left;
   height: 100%;
   min-height: 1px;
+  border-top: 1px solid #dfdfdf;
   border-right: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf; }
 
@@ -1540,9 +1566,10 @@ label {
 .call-modal-container {
   text-align: center; }
   .call-modal-container h3 {
-    padding-top: 106px; }
+    padding-top: 106px;
+    line-height: 1.3; }
   .call-modal-container .phone-registration-middle-block {
-    margin: 80px 0 70px 0; }
+    margin: 77px 20px 70px 20px; }
   .call-modal-container .phone-registration-offer {
     font-size: 14px;
     color: #5c5c5f; }
@@ -1558,11 +1585,12 @@ label {
       background: none;
       transition: 1s ease;
       -webkit-transition: 1s ease;
-      padding: 0; }
+      padding: 0;
+      width: 47%; }
       .call-modal-container .phone-registration-btn-container button:hover {
         opacity: 0.8; }
       .call-modal-container .phone-registration-btn-container button div {
-        width: 170px;
+        width: 100%;
         height: 44px;
         line-height: 43px;
         text-align: center;
