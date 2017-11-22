@@ -1163,7 +1163,7 @@ label {
 
 @media (max-width: 768px) {
   .page-wrapper .page-container .master-master-content .masters-list .masters-list-item {
-    width: 33%;
+    width: calc(100% / 3);
     height: initial;
     min-height: 160px; }
   .page-wrapper .page-container .content-right-block.services-service-right-block .services-service-right-block-first {
@@ -1298,7 +1298,9 @@ label {
   .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .form-content .form-item textarea {
     height: 70px; }
   .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-email-spam {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  .page-wrapper .page-container .content-right-block.time-master-right-block {
+    max-height: 390px; } }
 
 @media (max-width: 490px) {
   .page-wrapper {
@@ -1327,7 +1329,7 @@ label {
     .page-wrapper .page-container .contacts-master-content .contacts-master-right-block .contacts-master-right-block-second textarea {
       height: 70px; }
   .page-wrapper .page-container .master-master-content .masters-list .masters-list-item {
-    width: 33%; } }
+    width: calc(100% / 3); } }
 
 @media (max-width: 425px) {
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-time-schedule .table .tr .td a {
@@ -1428,7 +1430,8 @@ label {
   margin: 0 auto; }
 
 .slick-prev {
-  left: 5px;
+  left: 0;
+  border-right: 1px solid #dfdfdf;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1436,20 +1439,24 @@ label {
   transform: rotate(180deg); }
 
 .slick-next {
-  right: 5px; }
+  right: 0;
+  border-right: 1px solid #dfdfdf; }
 
 .slick-prev, .slick-next {
   background: url(../assets/images/svg/arrow-gray.svg);
+  background-size: 32%;
+  background-position: 50%;
   background-repeat: no-repeat;
-  border: none;
-  width: 7px;
-  height: 7px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  width: 20px;
+  height: 100%;
   position: absolute;
-  top: 45%;
+  top: 0;
   padding: 0;
   z-index: 1; }
   .slick-prev:focus, .slick-next:focus {
-    border: none; }
+    border: 1px solid #dfdfdf; }
 
 .slick-slider .slick-track, .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
