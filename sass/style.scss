@@ -2117,7 +2117,17 @@ label {
 	    width: 46% !important;
 	}
 
+	.avisits-date {
+		display: none;
 
+		&.responsive {
+			display: block !important;
+		}
+	}
+
+	.page-wrapper {
+		// height: 750px;
+	}
 }
 
 @media (max-width: 490px) {
@@ -2254,6 +2264,10 @@ label {
 	    width: 100%;
 	    padding-bottom: 12px;
 	}
+
+	.page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle .time-master-service-list table tr td:first-child {
+	    width: 58%;
+	}
 }
 
 
@@ -2363,7 +2377,7 @@ label {
 
 .slick-prev {
 	left: 0;
-	border-right: 0;
+	border-right: 0 !important;
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -2523,6 +2537,14 @@ label {
     		color: $color-gray;
     	}
     }
+}
+
+.avisits-date.responsive {
+	display: none;
+
+	.slick-initialized .slick-slide {
+		width: 56px !important;
+	}
 }
 
 // .avisits-date_slider .avisits-col.avisits-active:after {

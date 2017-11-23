@@ -1315,7 +1315,11 @@ label {
   .call-modal-container .phone-registration-btn-container {
     width: 304px !important; }
   .call-modal-container .phone-registration-btn-container button {
-    width: 46% !important; } }
+    width: 46% !important; }
+  .avisits-date {
+    display: none; }
+    .avisits-date.responsive {
+      display: block !important; } }
 
 @media (max-width: 490px) {
   .page-wrapper {
@@ -1380,7 +1384,9 @@ label {
   .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.time-info {
     float: left;
     width: 100%;
-    padding-bottom: 12px; } }
+    padding-bottom: 12px; }
+  .page-wrapper .page-container .content-right-block.ready-master-right-block .time-master-book-schedule-container.responsive .ready-master-time-schedule-item.middle .time-master-service-list table tr td:first-child {
+    width: 58%; } }
 
 .services-service-left-block-pic-container {
   height: 48px;
@@ -1454,7 +1460,7 @@ label {
 
 .slick-prev {
   left: 0;
-  border-right: 0;
+  border-right: 0 !important;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1562,6 +1568,11 @@ label {
     color: #333333; }
     .avisits-date_slider .avisits-col a p:last-child {
       color: #8e8e92; }
+
+.avisits-date.responsive {
+  display: none; }
+  .avisits-date.responsive .slick-initialized .slick-slide {
+    width: 56px !important; }
 
 .call-modal-container {
   text-align: center; }

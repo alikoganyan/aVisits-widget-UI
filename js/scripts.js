@@ -47,6 +47,6 @@ $(document).ready(function(){
 });
 
 
-$(function(){
-	$('input[placeholder], textarea[placeholder]').placeholder();
-});
+// $(function(){
+// 	$('input[placeholder], textarea[placeholder]').placeholder();
+// });
