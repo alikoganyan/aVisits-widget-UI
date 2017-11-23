@@ -915,6 +915,13 @@ label {
         border-bottom: 1px solid #dfdfdf; }
       .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container-all-inner {
         padding: 20px; }
+      .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info {
+        color: #8e8e92; }
+        .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info div {
+          display: inline-block;
+          padding-left: 30px; }
+          .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info div img {
+            vertical-align: baseline; }
       .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-title-block {
         float: left;
         vertical-align: top;
@@ -987,8 +994,7 @@ label {
           font-family: OpenSans-Bold, sans-serif; }
           .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-title {
             float: left;
-            font-size: 14px;
-            width: 50%; }
+            font-size: 14px; }
           .page-wrapper .page-container .content-right-block.time-master-right-block .time-service-all .time-service-item .time-service-item-info {
             float: right;
             color: #8e8e92; }
