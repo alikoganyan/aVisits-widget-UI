@@ -1196,7 +1196,11 @@ label {
     text-align: left;
     width: 100%; }
   .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-service-list {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info {
+    text-align: left !important; }
+    .page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info div:first-child {
+      padding-left: 0; } }
 
 @media (max-width: 614px) {
   .content-left-block {

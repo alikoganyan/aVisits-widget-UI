@@ -1905,6 +1905,14 @@ label {
 		padding-left: 0;
 	}
 
+	.page-wrapper .page-container .content-right-block.time-master-right-block .time-master-book-schedule-container .time-service-item-info {
+		text-align: left !important;
+
+		div:first-child {
+			padding-left: 0;
+		}
+	}
+
 }
 @media (max-width: 614px) {
 	.content-left-block {
